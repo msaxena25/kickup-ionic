@@ -1,0 +1,7 @@
+{
+  "name": "kickup",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
