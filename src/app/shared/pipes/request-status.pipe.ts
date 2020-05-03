@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { RequestStatus } from '../enums/request-status.enum';
+import { RequestStatus } from '../../enums/request-status.enum';
 @Pipe({
   name: 'requestStatus'
 })

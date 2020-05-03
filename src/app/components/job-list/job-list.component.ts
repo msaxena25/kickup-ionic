@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import jobs from '../../../assets/data/jobs.json';
+import { DataService } from 'src/app/services/data.service';
+
 
 @Component({
   selector: 'app-job-list',
@@ -11,22 +12,21 @@ export class JobListComponent implements OnInit {
   searchText: string = '';
   showSearchBox = false;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    console.log(jobs);
-    this.jobs = jobs;
-    
+    this.jobs = this.dataService.getJobsList();
+
   }
 
   onSearchBtnClick() {
     this.showSearchBox = !this.showSearchBox;
     this.searchText = '';
     setTimeout(() => {
-      const searchInput: any= document.getElementById('search-input'); 
+      const searchInput: any = document.getElementById('search-input');
       searchInput.firstElementChild.focus();
     }, 100);
-   
+
 
   }
 

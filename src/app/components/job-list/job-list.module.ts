@@ -4,7 +4,7 @@ import { JobListComponent } from './job-list.component';
 import { IonicModule } from '@ionic/angular';
 import { JobListRoutingModule } from './job-list.routing.module';
 import { FormsModule } from '@angular/forms';
-import { FilterPipe } from 'src/app/shared/filter.pipe';
+import { FilterPipe } from 'src/app/shared/pipes/filter.pipe';
 
 
 

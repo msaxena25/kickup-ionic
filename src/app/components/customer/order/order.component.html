@@ -31,9 +31,9 @@
             <ion-label class="cancel-btn" *ngIf="order.status !== 3 && order.status !== 7" color="danger" (click)="onOrderCancel(index)">
               Cancel
             </ion-label>
-            <ion-button size="small" *ngIf="order.status === 2" color="success">
-              <ion-icon name="call"></ion-icon>
-            </ion-button>
+            <ion-label >
+              <ion-icon *ngIf="order.status === 2" color="success" name="call"></ion-icon>
+            </ion-label>
           </ion-col>
         </ion-row>
       </ion-grid>

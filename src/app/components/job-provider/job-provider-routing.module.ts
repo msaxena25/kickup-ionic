@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProviderProfileComponent } from './provider-profile/provider-profile.component';
 import { ProviderOrdersComponent } from './provider-orders/provider-orders.component';
 import { HomeComponent } from '../home/home.component';
+import { ProviderJobsComponent } from './provider-jobs/provider-jobs.component';
 
 
 const routes: Routes = [
@@ -11,8 +12,8 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: 'job',
-        loadChildren: () => import('./../job-list/job-list.module').then(m => m.JobListModule)
+        path: 'jobs',
+        component: ProviderJobsComponent
       },
       {
         path: 'order',
@@ -24,7 +25,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'profile',
+        redirectTo: 'jobs',
         pathMatch: 'full'
       }
     ]

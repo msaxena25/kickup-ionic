@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "serviceProviderId": 1,
+    "jobCode": 101,
+    "jobTitle": "General Electrician",
+    "description": "I am capable of repair all electronic items.",
+    "visitCharges": 200,
+    "isActive": true,
+    "experience": "4 years",
+    "createdOn": "10-23-2019"
+  },
+  {
+    "id": 2,
+    "serviceProviderId": 1,
+    "jobCode": 205,
+    "jobTitle": "Electronic Equipment Repair",
+    "description": "I am capable of small equipments article. Ready to give excellent service",
+    "visitCharges": 200,
+    "isActive": true,
+    "experience": "2 years",
+    "createdOn": "10-23-2019"
+  }
+]

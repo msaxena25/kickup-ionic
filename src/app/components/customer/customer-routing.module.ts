@@ -12,7 +12,7 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: 'job',
+        path: 'jobs',
         loadChildren: () => import('../job-list/job-list.module').then(m => m.JobListModule)
       },
       {
@@ -25,7 +25,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'job',
+        redirectTo: 'jobs',
         pathMatch: 'full'
       }
     ]

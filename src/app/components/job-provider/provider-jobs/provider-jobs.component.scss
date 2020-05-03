@@ -1,0 +1,23 @@
+ion-content {
+
+  .grid-no-record {
+    height: 100%;
+
+    ion-row {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .row-2 {
+    .col-action-btn {
+      ion-label {
+        font-size: 17px;
+        padding-left: 10px;
+      }
+    }
+
+  }
+}

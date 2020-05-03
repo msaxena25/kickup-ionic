@@ -1,0 +1,57 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Add New Job</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <form>
+    <ion-item *ngIf="!job.jobCode">
+      <ion-input id="search-input" (click)="onSearchJob()" id="search-input" placeholder="Search Job..." animated
+        [(ngModel)]="searchText" name="searchText">
+      </ion-input>
+    </ion-item>
+    <ion-list *ngIf="showJobsList">
+      <ion-item *ngFor="let job of allJobs | filter : searchText : 'title';let odd = odd" (click)="onSelectJob(job)">
+        <ion-label>
+          <h2>{{job.title}}</h2>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+
+
+    <ion-item *ngIf="job.jobCode">
+      <ion-input (click)="onSearchJob()" readonly placeholder="Job Title" [(ngModel)]="job.jobTitle" name="jobTitle">
+      </ion-input>
+      <ion-label>{{job.jobCode}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="Description" [(ngModel)]="job.description" name="description"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="number" placeholder="Visit Charges" [(ngModel)]="job.visitCharges" name="visitCharges">
+      </ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-textarea type="number" placeholder="Experience" [(ngModel)]="job.experience" name="experience">
+      </ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Active </ion-label>
+      <ion-checkbox [(ngModel)] ="job.isActive" checked="true" name="active"></ion-checkbox>
+    </ion-item>
+  </form>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+
+    <ion-fab-button (click)="onSave()">
+      <ion-icon name="save"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

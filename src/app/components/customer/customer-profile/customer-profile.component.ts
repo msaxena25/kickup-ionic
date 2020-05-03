@@ -8,7 +8,7 @@ import { ToastService } from 'src/app/services/toast.service';
   styleUrls: ['./customer-profile.component.scss'],
 })
 export class CustomerProfileComponent implements OnInit {
-  customer = {};
+  customer: any = {};
   isReadOnly = true;
 
   constructor(private dataService: DataService, private toastService: ToastService) { }
@@ -19,12 +19,12 @@ export class CustomerProfileComponent implements OnInit {
 
   }
 
-  onEdit(profileForm) {
+  onEdit() {
     this.isReadOnly = false;
 
   }
 
-  onSaveProfile(profileForm) {
+  onSaveProfile() {
 
     this.toastService.presentToast('Saved successfully!')
     this.isReadOnly =  true;
