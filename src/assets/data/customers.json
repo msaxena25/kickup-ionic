@@ -1,0 +1,30 @@
+[
+  {
+    "id": "101",
+    "mobileNumber": "1234567890",
+    "name": "Kumar Ashok",
+    "email": "raj@gmail.com",
+    "createdOn": "10-23-2019"
+  },
+  {
+    "id": "102",
+    "mobileNumber": "1234567891",
+    "name": "David",
+    "email": "raj@gmail.com",
+    "createdOn": "10-23-2019"
+  },
+  {
+    "id": "103",
+    "mobileNumber": "1234567892",
+    "name": "Traversy",
+    "email": "raj@gmail.com",
+    "createdOn": "10-23-2019"
+  },
+  {
+    "id": "104",
+    "mobileNumber": "1234567893",
+    "name": "Raj kumar",
+    "email": "raj@gmail.com",
+    "createdOn": "10-23-2019"
+  }
+]

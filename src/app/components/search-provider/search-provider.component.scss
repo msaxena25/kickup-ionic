@@ -1,0 +1,44 @@
+@import '../../common.scss';
+ion-content {
+ 
+  .col-badge {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .col-place-request-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .place-request-btn {
+      // --background: #00cec9;
+      height: 1.5rem;
+      font-size: 0.6rem;
+    }
+  }
+
+
+  .col-profile {
+
+    img {
+      width: 75%  ;
+      border-radius: 100%;
+    }
+  }
+
+  .col-details {
+    .name {
+      font-weight: 600;
+      font-size: 13px;
+      color: #607C80;
+    }
+
+    p {
+      font-weight: 600;
+      margin: 0;
+      font-size: 11px;
+    }
+  }
+}

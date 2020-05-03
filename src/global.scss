@@ -24,3 +24,55 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  --ion-font-family: 'Montserrat', sans-serif;
+}
+
+ion-button {
+  // font-size: 11px;
+}
+
+.title-class {
+  font-size: 1rem !important;
+}
+
+ion-toolbar {
+  // --ion-background-color: #FF3E42;
+  // --ion-text-color: white;
+  --ion-background-color: #44ADA8;
+  color: white
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+ion-grid {
+  margin: 0;
+  padding: 0;
+}
+
+.odd-row {
+  background: rgb(242, 242, 242);
+  --border-style: none;
+  color: black;
+}
+
+.rating {
+  border: 1px solid #ccc;
+  color: #de3535;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 9%;
+  padding: 3px;
+  height: 23px;
+}
+
+.swal2-select {
+  font-size: 12px !important;
+}
+
+ion-back-button {
+  margin-left: -15px !important;
+}

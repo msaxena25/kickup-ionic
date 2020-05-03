@@ -1,0 +1,27 @@
+@import '../../../common.scss';
+
+.col-rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.col-details {
+p {
+  font-size: 15px;
+  span {
+    font-weight: 600;
+    margin-left: 6px;
+  }
+}
+}
+
+.col-action-btn {
+  &:first-child {
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .cancel-btn {
+    float: right;
+  }
+}

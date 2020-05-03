@@ -1,0 +1,57 @@
+[{
+    "id": 1010101,
+    "customerId": 101,
+    "serviceProviderId": 1,
+    "serviceProviderName": "Salman Khan",
+    "jobCode": 201,
+    "jobTitle": "General Electrician",
+    "status": 1,
+    "createdOn": "10-10-2019",
+    "completedOn": "10-11-2019",
+    "totalCharge": 400,
+    "workRating": 2.5,
+    "isDeleted": 0
+  },
+  {
+    "id": 584759,
+    "customerId": 101,
+    "serviceProviderId": 2,
+    "serviceProviderName": "Naveen Kumar",
+    "jobCode": 202,
+    "jobTitle": "AC Service",
+    "status": 3,
+    "createdOn": "10-10-2019",
+    "completedOn": "10-11-2019",
+    "totalCharge": 400,
+    "workRating": 3.5,
+    "isDeleted": 0
+  },
+  {
+    "id": 12121,
+    "customerId": 104,
+    "serviceProviderId": 2,
+    "serviceProviderName": "Kumar Sharma",
+    "jobCode": 202,
+    "jobTitle": "AC Service",
+    "status": 5,
+    "createdOn": "10-10-2019",
+    "completedOn": "10-11-2019",
+    "totalCharge": 400,
+    "workRating": 3.5,
+    "isDeleted": 0
+  },
+  {
+    "id": 3223,
+    "customerId": 104,
+    "serviceProviderId": 2,
+    "serviceProviderName": "David",
+    "jobCode": 202,
+    "jobTitle": "Home Cleaner",
+    "status": 2,
+    "createdOn": "10-10-2019",
+    "completedOn": "10-11-2019",
+    "totalCharge": 400,
+    "workRating": 3.5,
+    "isDeleted": 0
+  }
+]

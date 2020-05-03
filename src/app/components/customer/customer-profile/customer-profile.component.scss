@@ -1,0 +1,29 @@
+.row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: rgb(68,173,168);
+  background: linear-gradient(90deg, rgba(68,173,168,1) 16%, rgba(68,173,168,0.709588058856355) 62%);
+  
+ 
+}
+
+.profile-pic-item {
+  height: 6rem;
+  width: 6rem;
+
+  img {
+    border-radius: 100%;
+  }
+}
+
+.row-2 {}
+
+form {
+  width: 100%;
+}
+
+.list-1 {
+  padding-top: 0;
+}

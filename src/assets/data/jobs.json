@@ -1,0 +1,48 @@
+[
+  {
+    "jobId": 1,
+    "title": "General Electrician",
+    "jobCode": 201
+  },
+  {
+    "jobId": 2,
+    "title": "AC Service",
+    "jobCode": 202
+  },
+  {
+    "jobId": 3,
+    "title": "House Cleaner",
+    "jobCode": 203
+  },
+  {
+    "jobId": 4,
+    "title": "RO Service",
+    "jobCode": 204
+  },
+  {
+    "jobId": 5,
+    "title": "Electronic Equipment Repair",
+    "jobCode": 205
+  },
+  {
+    "jobId": 6,
+    "title": "Plumber",
+    "jobCode": 206
+  },
+  {
+    "jobId": 7,
+    "title": "Daily Labor",
+    "jobCode": 207
+  },
+  {
+    "jobId": 8,
+    "title": "Carpenter",
+    "jobCode": 208
+  },
+  {
+    "jobId": 9,
+    "title": "Body Massage & Facial",
+    "jobCode": 209
+  }
+  
+]

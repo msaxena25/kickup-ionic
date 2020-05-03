@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "reason": "Changed My Mind",
+    "statusId": 1
+  },
+  {
+    "id": 2,
+    "reason": "Acceptance waiting time is too long",
+    "statusId": 1
+  },
+  {
+    "id": 3,
+    "reason": "Find another option",
+    "statusId": 1
+  },
+  {
+    "id": 4,
+    "reason": "Service person unable to come on time",
+    "statusId": 2
+  },
+  {
+    "id": 5,
+    "reason": "Charges are too high",
+    "statusId": 2
+  },
+  {
+    "id": 6,
+    "reason": "Other",
+    "statusId": 2
+  }
+]
