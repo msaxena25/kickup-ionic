@@ -76,3 +76,19 @@ ion-grid {
 ion-back-button {
   margin-left: -15px !important;
 }
+
+.rounded-input-box {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0px;
+  margin-top: 5px;
+  border-radius: 5px;
+  height: 3rem;
+  --highlight-color-focused: transparent;
+  --highlight-color-valid: transparent;
+  --highlight-color-invalid: transparent;
+
+  ion-input {
+    --padding-start: 5px;
+  }
+}

@@ -13,8 +13,8 @@
     <ion-row class="row-1">
       <img src="assets/img/logo.png" alt="Ionic logo">
     </ion-row>
-    <ion-row>
-      <ion-col size="8" offset="2">
+    <ion-row class="row-2">
+      <ion-col class="col-form" size="10" offset="1">
         <form #loginForm="ngForm" novalidate>
           <ion-list>
             <ion-item class="rounded-input-box">
@@ -29,14 +29,24 @@
               </ion-input>
             </ion-item>
 
-            <ion-button *ngIf="!isOTPSent" [disabled]="login.mobileNumber.toString()?.length > 10" (click)="sendOTP(loginForm)"
-              type="submit" expand="block">Send OTP</ion-button>
+            <ion-button *ngIf="!isOTPSent" [disabled]="login.mobileNumber.toString()?.length > 10"
+              (click)="sendOTP(loginForm)" type="submit" expand="block">Send OTP</ion-button>
 
 
             <ion-button *ngIf="isOTPSent" (click)="verify()" color="danger" expand="block">Verify</ion-button>
 
-            <ion-button *ngIf="isOTPSent" [disabled]="login.mobileNumber.toString()?.length !== 10" (click)="sendOTP(loginForm)"
-              type="submit" expand="block">Resend OTP</ion-button>
+            <ion-button *ngIf="isOTPSent" [disabled]="login.mobileNumber.toString()?.length !== 10"
+              (click)="sendOTP(loginForm)" type="submit" expand="block">Resend OTP</ion-button>
+
+            <ion-item>
+              <a routerLink="/provider">Login as Provider</a>
+            </ion-item>
+
+            <ion-item>
+              <a routerLink="/customer">Login as Customer </a>
+            </ion-item>
+
+
 
           </ion-list>
 

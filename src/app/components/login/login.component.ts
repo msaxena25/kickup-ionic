@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
   verify() {
     this.toastService.presentToast('OTP Verified');
     localStorage.setItem('isUserLoggedIn', 'true');
-    this.router.navigateByUrl('/customer/job');
+    this.router.navigateByUrl('/customer');
   }
 
 }
