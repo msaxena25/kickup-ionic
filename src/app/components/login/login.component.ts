@@ -10,22 +10,22 @@ import { ToastService } from 'src/app/services/toast.service';
 })
 export class LoginComponent implements OnInit {
 
-  login: any = { mobileNumber: '', otp: '' };
-  submitted = false;
-  isOTPSent = false;
+  private login: any = { mobileNumber: '', otp: '' };
+  private submitted = false;
+  private isOTPSent = false;
 
   constructor(private toastService: ToastService, private router: Router) { }
 
   ngOnInit() { }
 
-  sendOTP() {
+  private sendOTP() {
     this.isOTPSent = true;
     console.log(this.login.mobileNumber);
     this.toastService.presentToast('OTP sent');
 
   }
 
-  verify() {
+  private verify() {
     this.toastService.presentToast('OTP Verified');
     localStorage.setItem('isUserLoggedIn', 'true');
     this.router.navigateByUrl('/customer');

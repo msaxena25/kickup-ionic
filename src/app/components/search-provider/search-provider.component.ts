@@ -10,17 +10,17 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./search-provider.component.scss'],
 })
 export class SearchProviderComponent implements OnInit {
-  providerList: any = [];
+  private providerList: any = [];
 
   constructor(private modalController: ModalController, private router: Router, private dataService: DataService) { }
 
   ngOnInit() { }
 
-  ionViewDidEnter() {
+  private ionViewDidEnter() {
     this.providerList = this.dataService.getProvidersList();
   }
 
-  onPlaceRequest() {
+  private onPlaceRequest() {
     //this.presentModal();
     const orderId = Math.floor(Math.random() * 1000000);
     Swal.fire(

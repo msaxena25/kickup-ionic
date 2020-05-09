@@ -9,9 +9,9 @@ import Swal from 'sweetalert2';
   styleUrls: ['./order.component.scss'],
 })
 export class OrderComponent implements OnInit {
-  orders: any = [];
-  cancelReasons: any = [];
-  cancelReasonsObject: any = {};
+  private orders: any = [];
+  private cancelReasons: any = [];
+  private cancelReasonsObject: any = {};
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
@@ -50,7 +50,7 @@ export class OrderComponent implements OnInit {
     // }
   }
 
-  onStatusClick(statusId) {
+  private onStatusClick(statusId) {
     if (statusId === RequestStatus.Placed) {
 
       Swal.fire(

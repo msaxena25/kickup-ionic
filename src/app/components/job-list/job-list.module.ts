@@ -1,20 +1,18 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { SharedModule } from 'src/app/shared.module';
+
 import { JobListComponent } from './job-list.component';
-import { IonicModule } from '@ionic/angular';
 import { JobListRoutingModule } from './job-list.routing.module';
-import { FormsModule } from '@angular/forms';
-import { FilterPipe } from 'src/app/shared/pipes/filter.pipe';
 
 
 
 @NgModule({
-  declarations: [JobListComponent, FilterPipe],
+  declarations: [JobListComponent],
   imports: [
     CommonModule,
-    IonicModule,
     JobListRoutingModule,
-    FormsModule
+    SharedModule
   ]
 })
 export class JobListModule { }

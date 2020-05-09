@@ -10,7 +10,7 @@ import { ToastService } from 'src/app/services/toast.service';
   styleUrls: ['./provider-jobs.component.scss'],
 })
 export class ProviderJobsComponent implements OnInit {
-  providerJobs: any = [];
+  private providerJobs: any = [];
   constructor(private dataService: DataService, public modalController: ModalController, private toastService: ToastService) { }
 
   ngOnInit() {
@@ -35,11 +35,11 @@ export class ProviderJobsComponent implements OnInit {
 
   }
 
-  onEdit(job: any, index: number) {
+  private onEdit(job: any, index: number) {
     this.onAdd(job, index);
   }
 
-  onRemove(index: number) {
+  private onRemove(index: number) {
     this.providerJobs.splice(index, 1);
     this.toastService.presentToast('Job removed!');
   }

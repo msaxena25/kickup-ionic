@@ -9,11 +9,11 @@ import { ToastService } from 'src/app/services/toast.service';
   styleUrls: ['./add-job.component.scss'],
 })
 export class AddJobComponent implements OnInit {
-  @Input() jobData: any;
-  job: any = {isActive: true};
-  allJobs: any = [];
-  showJobsList = false;
-  searchText: string = '';
+  @Input() private jobData: any;
+  private job: any = {isActive: true};
+  private allJobs: any = [];
+  private showJobsList = false;
+  private searchText: string = '';
 
   constructor(private modalController: ModalController, private dataService: DataService,  private toastService: ToastService) { }
 
@@ -24,7 +24,7 @@ export class AddJobComponent implements OnInit {
     this.allJobs = this.dataService.getJobsList();
   }
 
-  onSearchJob() {
+  private onSearchJob() {
     this.job.jobCode = '';
     this.showJobsList = true;
     setTimeout(() => {
@@ -33,18 +33,18 @@ export class AddJobComponent implements OnInit {
     }, 10);
   }
 
-  onSelectJob(job) {
+  private onSelectJob(job) {
     this.job.jobCode = job.jobCode;
     this.job.jobTitle = job.title;
     this.showJobsList = false;
   }
 
-  onSave() {
+  private onSave() {
     this.toastService.presentToast('Job added successfully!')
     this.dismissModal();
   }
 
-  dismissModal() {
+  private dismissModal() {
     this.modalController.dismiss({ data: this.job })
   }
 

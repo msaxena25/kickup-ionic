@@ -8,9 +8,9 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./job-list.component.scss'],
 })
 export class JobListComponent implements OnInit {
-  jobs: any = [];
-  searchText: string = '';
-  showSearchBox = false;
+  private jobs: any = [];
+  private searchText: string = '';
+  private showSearchBox = false;
 
   constructor(private dataService: DataService) { }
 
@@ -19,7 +19,7 @@ export class JobListComponent implements OnInit {
 
   }
 
-  onSearchBtnClick() {
+  private onSearchBtnClick() {
     this.showSearchBox = !this.showSearchBox;
     this.searchText = '';
     setTimeout(() => {

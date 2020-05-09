@@ -7,7 +7,7 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  placedOrderCount = 0;
+  private placedOrderCount = 0;
 
   constructor(private dataService: DataService) { }
 
